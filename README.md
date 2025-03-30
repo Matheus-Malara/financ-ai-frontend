@@ -1,12 +1,33 @@
-# React + Vite
+# FinancAI Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean and fast React interface for **FinancAI** — an AI-powered stock analysis tool.  
+Built for learning modern frontend development with React, Vite and TailwindCSS.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Input US stock ticker (e.g., AAPL)
+- Fetch financial indicators from the backend
+- Display fundamental metrics
+- Show AI-generated summary and conclusion via OpenAI
+- Built-in loading and error handling
+- Clean and responsive UI
 
-## Expanding the ESLint configuration
+## 🧰 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+
+## 🚀 Getting Started
+
+```bash
+# Clone the repo
+git clone https://github.com/matheus-malara/financ-ai-frontend.git
+cd financ-ai-frontend
+
+# Install dependencies
+npm install
+
+# Run locally
+npm run dev
