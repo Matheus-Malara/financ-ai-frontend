@@ -46,7 +46,7 @@ npm install
 npm run dev
 ```
 
-> Make sure the backend ([(FinancAI API](https://github.com/matheus-malara/financ-ai)) is running on `http://localhost:8080`
+> Make sure the backend ([FinancAI API](https://github.com/matheus-malara/financ-ai)) is running on `http://localhost:8080`
 
 ---
 
