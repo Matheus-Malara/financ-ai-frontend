@@ -36,7 +36,7 @@ function App() {
             </h1>
 
 
-            <InputTicker ticker={ticker} setTicker={setTicker} onSubmit={handleAnalyze}/>
+            <InputTicker ticker={ticker} setTicker={setTicker} onSubmit={handleAnalyze} loading={loading} />
 
             {loading && <Loading/>}
             {error && <p className="text-red-600">{error}</p>}
