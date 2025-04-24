@@ -1,6 +1,6 @@
-export default function InputTicker({ ticker, setTicker, onSubmit }) {
+export default function InputTicker({ticker, setTicker, onSubmit, loading}) {
     const handleSubmit = (e) => {
-        e.preventDefault(); // evita reload da página
+        e.preventDefault();
         onSubmit();
     };
 
@@ -12,12 +12,18 @@ export default function InputTicker({ ticker, setTicker, onSubmit }) {
                 onChange={(e) => setTicker(e.target.value)}
                 placeholder="Enter ticker (e.g. AAPL)"
                 className="px-4 py-2 border rounded w-64"
+                disabled={loading}
             />
             <button
                 type="submit"
-                className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+                disabled={loading}
+                className={`px-4 py-2 rounded text-white transition ${
+                    loading
+                        ? "bg-blue-400 cursor-not-allowed"
+                        : "bg-blue-600 hover:bg-blue-700"
+                }`}
             >
-                Analyze
+                {loading ? "Analyzing..." : "Analyze"}
             </button>
         </form>
     );
