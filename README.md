@@ -56,8 +56,8 @@ npm run dev
 src/
 ├── components/         # Reusable UI components (Input, Result, Loading, etc.)
 ├── services/           # API service (fetch to backend)
-├── App.jsx             # Main UI logic
-├── main.jsx            # Entry point
+├── App.tsx             # Main UI logic
+├── main.tsx            # Entry point
 ├── index.css           # Tailwind styles
 ```
 
